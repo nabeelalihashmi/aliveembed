@@ -1,4 +1,4 @@
-(function() {
+(function () {
     const scriptTag = document.currentScript;
     const formId = scriptTag.getAttribute('data-form-id');
     const classes = scriptTag.getAttribute('data-classes') || '';
@@ -40,7 +40,7 @@
         formContainer.style.height = popupHeight;
     }
 
-    formContainer.innerHTML = `<iframe src="https://aliveforms.com/form/${formId}" frameborder="0" style="width: 100%; height: 100%;"></iframe>`;
+    formContainer.innerHTML = `<iframe id="frame-${formId}" src="https://aliveforms.com/form/${formId}" frameborder="0" style="width: 100%; height: 100%;"></iframe>`;
 
     document.body.appendChild(formContainer);
 
@@ -87,7 +87,7 @@
         });
     }
 
-    window.showForm = function(formId) {
+    window.showForm = function (formId) {
         const formContainer = document.getElementById(formId);
         if (formContainer) {
             formContainer.style.display = 'block';
@@ -98,7 +98,7 @@
         }
     };
 
-    window.hideForm = function(formId) {
+    window.hideForm = function (formId) {
         const formContainer = document.getElementById(formId);
         if (formContainer) {
             formContainer.style.transform = 'scale(0)';
@@ -107,6 +107,11 @@
                 formContainer.style.display = 'none';
             }, 300);
         }
+    };
+
+    window.getFrameRef = function (formId) {
+        const iframe = document.getElementById(`frame-${formId}`);
+        return iframe;
     };
 
     window.aliveFormIds = window.aliveFormIds || [];
