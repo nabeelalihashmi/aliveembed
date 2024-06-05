@@ -17,7 +17,7 @@
     const fabClasses = scriptTag.getAttribute('data-fab-classes') || '';
 
     const formContainer = document.createElement('div');
-    formContainer.id = `form-container-${formId}`;
+    formContainer.id = `${formId}`;
     formContainer.className = `rounded ${classes}`;
     formContainer.style.display = 'none';
     formContainer.style.position = 'fixed';
