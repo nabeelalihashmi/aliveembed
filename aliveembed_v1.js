@@ -8,7 +8,6 @@
     const iconSvg = scriptTag.getAttribute('data-icon-svg') || '';
     const popupWidth = scriptTag.getAttribute('data-popup-width') || '400px';
     const popupHeight = scriptTag.getAttribute('data-popup-height') || '600px';
-    const popupGap = scriptTag.getAttribute('data-popup-gap') || '20px';
     const popupBottom = scriptTag.getAttribute('data-popup-bottom') || '20px';
     const popupRight = scriptTag.getAttribute('data-popup-right') || '20px';
     const fabSize = scriptTag.getAttribute('data-fab-size') || '50px';
