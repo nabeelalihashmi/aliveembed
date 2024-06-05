@@ -12,7 +12,6 @@
     const popupBottom = scriptTag.getAttribute('data-popup-bottom') || '20px';
     const popupRight = scriptTag.getAttribute('data-popup-right') || '20px';
     const fabSize = scriptTag.getAttribute('data-fab-size') || '50px';
-    const fabGap = scriptTag.getAttribute('data-fab-gap') || '20px';
     const fabBottom = scriptTag.getAttribute('data-fab-bottom') || '20px';
     const fabRight = scriptTag.getAttribute('data-fab-right') || '20px';
 
