@@ -28,7 +28,6 @@
     formContainer.style.transition = 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out';
     formContainer.style.transform = 'translateX(100vw)';
     formContainer.style.opacity = '0';
-    formContainer.style.maxWidth = maxPopupWidth;
     formContainer.style.paddingTop = "40px";
 
     if (displayStyle === 'fullscreen') {
@@ -37,6 +36,7 @@
         formContainer.style.width = '100vw';
         formContainer.style.height = '100vh';
     } else if (displayStyle === 'bottom-right') {
+        formContainer.style.maxWidth = maxPopupWidth;
         formContainer.style.bottom = popupBottom;
         formContainer.style.right = popupRight;
         formContainer.style.width = popupWidth;
