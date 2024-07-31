@@ -54,8 +54,8 @@
 
     closeButton.style.zIndex = '99999999';
     closeButton.style.position = 'absolute';
-    closeButton.style.right = '10px';
-    closeButton.style.top = '8px';
+    closeButton.style.right = '32px';
+    closeButton.style.top = '18px';
     closeButton.style.height = '32px';
     closeButton.style.width = '32px';
 
