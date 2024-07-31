@@ -132,6 +132,9 @@
     window.aliveFormIds.push(formContainer.id);
 
     function applyResponsiveStyles() {
+        if (displayStyle === 'fullscreen') {
+            return;
+        }
         const width = window.innerWidth;
 
         if (showFab && fabButton) {
